@@ -53,69 +53,85 @@
 <!-- #include file ="/header/Header.aspx" -->
 <body class="col-md-12">
     <h1 style="color: white">Cuestionario</h1>
-    <div style="background-color:#f0ffffc2" class="col-md-12">
+    <div style="background-color: #f0ffffc2" class="col-md-12">
         <h2>M U S I C A</h2>
 
         <hr>
 
         <form style="font: normal 16px sans-serif">
-
             <p>Quien Invento el Piano?</p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta1" id="p11">
-                A) Bartolomeo Cristofori.</p>
+                A) Bartolomeo Cristofori.
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta1" id="p12">
-                B) Cristofori Barto.</p>
+                B) Cristofori Barto.
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta1" id="p13">
-                C) Bartolomeo Cristofer.</p>
+                C) Bartolomeo Cristofer.
+            </p>
 
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta1" id="p14">
-                D) Bartimeo Cristofori.</p>
+                D) Bartimeo Cristofori.
+            </p>
             <p>Quien Invento las Notas Musicales</p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta2" id="p21">
-                A) GUIDO DE AREZZO.</p>
+                A) GUIDO DE AREZZO.
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta2" id="p22">
-                B)GUIDO DE ARESSO</p>
+                B)GUIDO DE ARESSO
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta2" id="p23">
-                 C)ALDO DE AREZZO</p>
+                C)ALDO DE AREZZO
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta2" id="p24">
-                 D)WALDO DE AREZZO</p>
+                D)WALDO DE AREZZO
+            </p>
             <p>¿Quién compuso la letra del himno nacional de México?</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta3" id="p31">
-                A) Jaime Nunó</p>
+                A) Jaime Nunó
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta3" id="p32">
-                  B) Jaime Nuño</p>
+                B) Jaime Nuño
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta3" id="p33">
-                  C) Jaime Núno</p>
+                C) Jaime Núno
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta3" id="p34">
-                  D) Jaime Nun</p>
+                D) Jaime Nun
+            </p>
             <p>Quien es el padre de la armonia?</p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta4" id="p41">
-                A) Johann Sebastian Bach</p>
+                A) Johann Sebastian Bach
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta4" id="p42">
-                B) Johann Sebastian Bahc</p>
+                B) Johann Sebastian Bahc
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta4" id="p43">
-                C) Johanna Bach</p>
+                C) Johanna Bach
+            </p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta4" id="p44">
-                D) Johanne Bach Sebastian</p>
+                D) Johanne Bach Sebastian
+            </p>
             <hr>
             <p>
-                <input type="button" value=" R E S U L T A D O " onclick="resultado()" /></p>
+                <input type="button" value=" R E S U L T A D O " onclick="resultado()" />
+            </p>
         </form>
 
     </div>
@@ -137,11 +153,10 @@
             if (document.getElementById('p44').checked == true) { p4 = 1 }
             else { p4 = 0 }
             nota = p1 + p2 + p3 + p4;
-            if (nota = '4');
-            {
-                alert(" ¡¡¡ H A Z  G A N A D O !!! " + nota);
-            } 
-            
+            if (nota == 4) {
+                alert(" Tus Aciertos son: " + nota + "F E L I C I D A D E S");
+            }
+            alert(" Tus Aciertos son: " + nota + "  LO SENTIMOS :(  Para ganar tienes que acertar los 4");
             location.reload();
         }
     </script>
