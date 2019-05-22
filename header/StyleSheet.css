@@ -1,0 +1,9 @@
+﻿.imagen {
+    background-image: url('../image/PF.jpg');
+    background-repeat: repeat;
+    background-color: lightgrey;
+}
+
+.letras {
+    color: azure;
+}
