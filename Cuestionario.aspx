@@ -64,50 +64,50 @@
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta1" id="p11">
                 A) Bartolomeo Cristofori.</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta1" id="p12">
                 B) Cristofori Barto.</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta1" id="p13">
                 C) Bartolomeo Cristofer.</p>
 
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta1" id="p14">
                 D) Bartimeo Cristofori.</p>
             <p>Quien Invento las Notas Musicales</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta2" id="p21">
                 A) GUIDO DE AREZZO.</p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta2" id="p22">
                 B)GUIDO DE ARESSO</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta2" id="p23">
                  C)ALDO DE AREZZO</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta2" id="p24">
                  D)WALDO DE AREZZO</p>
             <p>¿Quién compuso la letra del himno nacional de México?</p>
             <p onclick="this.style.color='#FF0000'">
                 <input type="radio" name="pregunta3" id="p31">
                 A) Jaime Nunó</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta3" id="p32">
                   B) Jaime Nuño</p>
             <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta3" id="p33">
                   C) Jaime Núno</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta3" id="p34">
                   D) Jaime Nun</p>
             <p>Quien es el padre de la armonia?</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta4" id="p41">
                 A) Johann Sebastian Bach</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta4" id="p42">
                 B) Johann Sebastian Bahc</p>
-            <p onclick="this.style.color='#FF0000'">
+            <p onclick="this.style.color='#00FF00'">
                 <input type="radio" name="pregunta4" id="p43">
                 C) Johanna Bach</p>
             <p onclick="this.style.color='#00FF00'">
@@ -137,7 +137,11 @@
             if (document.getElementById('p44').checked == true) { p4 = 1 }
             else { p4 = 0 }
             nota = p1 + p2 + p3 + p4;
-            alert(" Tus Aciertos son: " + nota);
+            if (nota = '4');
+            {
+                alert(" ¡¡¡ H A Z  G A N A D O !!! " + nota);
+            } 
+            
             location.reload();
         }
     </script>
