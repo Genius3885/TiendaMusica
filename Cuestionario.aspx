@@ -52,87 +52,88 @@
 </head>
 <!-- #include file ="/header/Header.aspx" -->
 <body class="col-md-12">
-    <h1 style="color: white">Cuestionario</h1>
+    <h1 style="color: white; font-size:30px">Cuestionario</h1>
     <div style="background-color: #f0ffffc2" class="col-md-12">
-        <h2>M U S I C A</h2>
 
         <hr>
+        <div style="text-align:center">
+            <form style="font: normal 16px sans-serif">
+                <p>Quien Invento el Piano?</p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta1" id="p11">
+                    A) Bartolomeo Cristofori.
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta1" id="p12">
+                    B) Cristofori Barto.
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta1" id="p13">
+                    C) Bartolomeo Cristofer.
+                </p>
 
-        <form style="font: normal 16px sans-serif">
-            <p>Quien Invento el Piano?</p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta1" id="p11">
-                A) Bartolomeo Cristofori.
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta1" id="p12">
-                B) Cristofori Barto.
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta1" id="p13">
-                C) Bartolomeo Cristofer.
-            </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta1" id="p14">
+                    D) Bartimeo Cristofori.
+                </p>
+                <p>Quien Invento las Notas Musicales</p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta2" id="p21">
+                    A) GUIDO DE AREZZO.
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta2" id="p22">
+                    B)GUIDO DE ARESSO
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta2" id="p23">
+                    C)ALDO DE AREZZO
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta2" id="p24">
+                    D)WALDO DE AREZZO
+                </p>
+                <p>¿Quién compuso la letra del himno nacional de México?</p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta3" id="p31">
+                    A) Jaime Nunó
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta3" id="p32">
+                    B) Jaime Nuño
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta3" id="p33">
+                    C) Jaime Núno
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta3" id="p34">
+                    D) Jaime Nun
+                </p>
+                <p>Quien es el padre de la armonia?</p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta4" id="p41">
+                    A) Johann Sebastian Bach
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta4" id="p42">
+                    B) Johann Sebastian Bahc
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta4" id="p43">
+                    C) Johanna Bach
+                </p>
+                <p onclick="this.style.color='#00FF00'">
+                    <input type="radio" name="pregunta4" id="p44">
+                    D) Johanne Bach Sebastian
+                </p>
+                <hr>
+                <p>
+                    <input type="button" value=" R E S U L T A D O " onclick="resultado()" />
+                </p>
+            </form>
+        </div>
 
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta1" id="p14">
-                D) Bartimeo Cristofori.
-            </p>
-            <p>Quien Invento las Notas Musicales</p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta2" id="p21">
-                A) GUIDO DE AREZZO.
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta2" id="p22">
-                B)GUIDO DE ARESSO
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta2" id="p23">
-                C)ALDO DE AREZZO
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta2" id="p24">
-                D)WALDO DE AREZZO
-            </p>
-            <p>¿Quién compuso la letra del himno nacional de México?</p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta3" id="p31">
-                A) Jaime Nunó
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta3" id="p32">
-                B) Jaime Nuño
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta3" id="p33">
-                C) Jaime Núno
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta3" id="p34">
-                D) Jaime Nun
-            </p>
-            <p>Quien es el padre de la armonia?</p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta4" id="p41">
-                A) Johann Sebastian Bach
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta4" id="p42">
-                B) Johann Sebastian Bahc
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta4" id="p43">
-                C) Johanna Bach
-            </p>
-            <p onclick="this.style.color='#00FF00'">
-                <input type="radio" name="pregunta4" id="p44">
-                D) Johanne Bach Sebastian
-            </p>
-            <hr>
-            <p>
-                <input type="button" value=" R E S U L T A D O " onclick="resultado()" />
-            </p>
-        </form>
 
     </div>
     <script>
